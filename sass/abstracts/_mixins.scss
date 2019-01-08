@@ -1,0 +1,14 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+@mixin translate_y($pixel) {
+  transform: translateY($pixel);
+}
+@mixin translate_x($pixel) {
+  transform: translateX($pixel);
+}
